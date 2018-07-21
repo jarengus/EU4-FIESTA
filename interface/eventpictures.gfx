@@ -1,0 +1,10 @@
+spriteTypes = {
+
+
+spriteType = {
+		name = "PEPE_FROG"
+		texturefile = "gfx/event_pictures/PEPE_FROG.dds"
+		allwaystransparent = yes
+	}
+	
+}

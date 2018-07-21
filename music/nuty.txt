@@ -1,0 +1,10 @@
+song = {
+	name = "THUNDER"
+	
+	chance = {
+		modifier = {
+			factor = 20
+			has_country_modifier = challenge_boh
+		}		
+	}
+}

@@ -1,0 +1,31 @@
+pirate_base = {
+	potential = {
+		province_id = 5000
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		owner = {
+			OR = {
+				tag = CPI
+			}
+		}
+	}
+	
+	province_trade_power_value = 5
+	local_sailors_modifier = 0.1
+	global_tax_income = 3
+	picture = "province_trade_power_value"
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}

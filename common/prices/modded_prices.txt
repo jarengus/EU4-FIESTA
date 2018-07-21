@@ -1,0 +1,5 @@
+Vodka = {
+        #Base Price
+	base_price = 3
+     
+}

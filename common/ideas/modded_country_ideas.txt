@@ -1,0 +1,202 @@
+LEH_ideas = {
+	start = {
+		cavalry_power = 0.20 
+		global_unrest = -1 
+	}
+
+	bonus = {
+		years_of_nationalism = -5
+	}
+	
+	trigger = {
+		tag = LEH
+	}
+	free = yes		#will be added at load.
+	
+	leh_zeal = {
+		tolerance_own = 3
+	}
+	leh_youth = {
+		global_manpower_modifier = 0.25
+	}
+	leh_obstinacy = {
+		defensiveness = 0.25
+	}
+	leh_toughness = {
+		shock_damage_received = -0.15
+	}
+	leh_workers = {
+		production_efficiency = 0.1
+	}
+	leh_teachings = {
+		culture_conversion_cost = -0.15
+	}
+	leh_lands = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+}
+
+ULM_OFF_ideas = {
+	start = {
+		land_morale = 0.1
+		defensiveness = 0.25
+	}
+
+	bonus = {
+		discipline = 0.1
+	}
+	
+	trigger = {
+		tag = ULM
+		NOT = {
+		has_country_modifier = eco_ulm
+		}
+	}
+	free = yes		#will be added at load.
+	
+	off_ulm1 = {
+		army_tradition_decay = -0.1
+	}
+	off_ulm2 = {
+		reinforce_cost_modifier = -0.25
+	}
+	off_ulm3 = {
+		land_maintenance_modifier = -0.1
+	}
+	off_ulm4 = {
+		prestige = 1
+	}
+	off_ulm5 = {
+		fire_damage = 0.1
+	}
+	off_ulm6 = {
+		global_manpower_modifier = 0.25
+	}
+	off_ulm7 = {
+		land_attrition = -0.3
+	}
+}
+
+ULM_eco_ideas = {
+	start = {
+		global_tax_modifier = 0.1
+		
+	}
+
+	bonus = {
+		
+	}
+	
+	trigger = {
+		tag = ULM
+		
+		has_country_modifier = eco_ulm
+		
+	}
+	free = yes		#will be added at load.
+	
+	eco_ulm1 = {
+		inflation_reduction = 0.05
+	}
+	eco_ulm2 = {
+		ship_power_propagation = 0.15
+	}
+	eco_ulm3 = {
+		production_efficiency = 0.1
+	}
+	eco_ulm4 = {
+		build_cost = -0.1
+		build_time = -0.25
+	}
+	eco_ulm5 = {
+		fort_maintenance_modifier = -0.1
+	}
+	eco_ulm6 = {
+		global_trade_power = 0.1
+	}
+	eco_ulm7 = {
+		war_exhaustion = -0.1
+	}
+}
+
+
+CPI_ideas = {
+	start = {
+		may_explore = yes
+		may_perform_slave_raid = yes
+	}
+
+	bonus = {
+		naval_forcelimit_modifier = 0.5
+	}
+	
+	trigger = {
+		tag = CPI
+	}
+	free = yes		#will be added at load.
+	
+	cpi1 = {
+		privateer_efficiency = 0.2
+	}
+	cpi2 = {
+		global_manpower_modifier = 0.1
+			global_sailors_modifier = 0.25
+	}
+	cpi3 = {
+			global_unrest = -2
+	}
+	cpi4 = {
+		prestige_from_land = 0.1
+		prestige_from_naval = 0.1
+	}
+	cpi5 = {
+		war_exhaustion = -0.1
+	}
+	cpi6 = {
+		naval_maintenance_modifier = -0.6
+		sailor_maintenance_modifer = -0.5
+	}
+	cpi7 = {
+		naval_morale = 0.2
+	}
+}
+VIK_ideas = {
+	start = {
+		infantry_power = 0.15
+		global_manpower_modifier = 0.25 
+	}
+
+	bonus = {
+		war_taxes_cost_modifier = -0.5
+	}
+	
+	trigger = {
+		tag = VIK
+	}
+	free = yes		#will be added at load.
+	
+	vik1 = {
+		land_attrition = -0.2
+		hostile_attrition = 0.5
+	}
+	vik2 = {
+		siege_ability = 0.2
+	}
+	vik3 = {
+		blockade_efficiency = 0.25
+	}
+	vik4 = {
+		trade_steering = 0.2
+		embargo_efficiency = 0.35
+	}
+	vik5 = {
+		loot_amount = 0.25
+	}
+	vik6 = {
+		discipline = 0.1
+	}
+	vik7 = {
+		war_exhaustion = -0.1
+	}
+}

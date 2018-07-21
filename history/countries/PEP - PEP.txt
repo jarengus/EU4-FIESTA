@@ -1,0 +1,6 @@
+government = feudal_monarchy
+government_rank = 3
+primary_culture = czech
+religion = catholic
+technology_group = western
+capital = 262	# Krakov

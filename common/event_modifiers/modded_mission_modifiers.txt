@@ -1,0 +1,4 @@
+ united_east_europe = {
+	land_morale = 0.1
+	
+}

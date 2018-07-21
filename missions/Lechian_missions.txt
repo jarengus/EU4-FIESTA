@@ -1,0 +1,109 @@
+lech_horde = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = LEH
+	}
+	has_country_shield = yes
+	
+	kill_horde = {
+	icon = SCREECH
+	required_missions = {  }
+	ai_weight = {
+			factor = 25
+		}
+		ai_priority = {
+			factor = 25
+		}
+	provinces_to_highlight = {
+			OR = {
+				region = crimea_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			
+		}
+		trigger = {
+			crimea_region = {
+				type = all
+				country_or_vassal_holds = ROOT
+			}
+		}
+	effect = {
+	ural_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+	}
+	}
+	}
+		
+	kill_ural = {
+	icon = SCREECH
+	position = 2
+	required_missions = { kill_horde }
+	ai_weight = {
+			factor = 25
+		}
+		ai_priority = {
+			factor = 25
+		}
+	provinces_to_highlight = {
+			OR = {
+				region = ural_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			
+		}
+		trigger = {
+			ural_region = {
+				type = all
+				country_or_vassal_holds = ROOT
+			}
+		}
+	effect = {
+	carpathia_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+	}
+	}
+	}
+	
+	kill_carpathia = {
+	icon = SCREECH
+	position = 3
+	required_missions = { kill_ural }
+	ai_weight = {
+			factor = 25
+		}
+		ai_priority = {
+			factor = 25
+		}
+	provinces_to_highlight = {
+			OR = {
+				region = carpathia_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			
+		}
+		trigger = {
+			carpathia_region = {
+				type = all
+				country_or_vassal_holds = ROOT
+			}
+		}
+	effect = {
+			add_country_modifier = { 
+		name = united_east_europe
+		duration = -1
+		desc = united_east_europe
+		hidden = no
+		}
+	}
+	}	
+}

@@ -1,0 +1,128 @@
+country_decisions = {
+
+	lech_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_lech_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = LEH }
+			NOT = { tag = LEH }
+			OR = {
+				ai = no
+				AND = {
+					NOT = { exists = LEH }
+					num_of_cities = 20
+				}
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			OR = {
+				primary_culture = polish
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1079	# Viatka
+				province_id = 295	# Moskva
+				province_id = 262	# Krakov
+				province_id = 276	# Minsk
+				province_id = 283	# Zaporozhia
+				province_id = 33	# Neva
+				province_id = 274	# Pskov
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = LEH }
+			is_at_war = no
+			is_free_or_tributary_trigger = yes			
+			owns_core_province = 1079	# Viatka
+			owns_core_province = 295	# Moskva
+			owns_core_province = 262	# Krakov
+			owns_core_province = 276	# Minsk
+			owns_core_province = 283	# Zaporozhia
+			owns_core_province= 33	# Neva
+			owns_core_province = 274	# Pskov
+			mil_tech = 15
+			
+			
+			}
+		effect = {
+			change_tag = LEH
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			poland_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = LEH
+			}
+				baltic_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = LEH
+			}
+				russia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = LEH
+			}
+				ruthenia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = LEH
+			}
+			crimea_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = LEH
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			if = {
+				limit = {
+					NOT = {
+						primary_culture = polish
+					}
+				}
+				change_primary_culture = polish
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_lech_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400 #If there is no Poland then Polish minors will prioritize reforming it.
+	}
+	
+}

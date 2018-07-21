@@ -1,0 +1,8 @@
+ challenge_boh = {
+	land_morale = 0.3
+	ae_impact = 0.5
+	naval_forcelimit_modifier = 0.5
+	naval_maintenance_modifier = -0.2
+	colonists = 1
+	global_trade_goods_size_modifier = -0.25
+}

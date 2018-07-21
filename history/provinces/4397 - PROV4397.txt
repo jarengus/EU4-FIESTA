@@ -1,0 +1,13 @@
+add_core = VIK
+owner = VIK
+controller = VIK
+culture = nordth
+religion = norse_pagan_reformed
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = grain
+base_manpower = 3
+capital = "4397"
+is_city = yes
+

@@ -1,0 +1,10 @@
+spriteTypes = {
+
+
+spriteType = {
+		name = "SCREECH"
+		texturefile = "gfx/missions/SCREECH.dds"
+		allwaystransparent = yes
+	}
+	
+}

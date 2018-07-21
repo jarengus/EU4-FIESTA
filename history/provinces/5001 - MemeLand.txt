@@ -1,0 +1,23 @@
+#Uppland, contains Stockholm, Uppsala & Nyköping.
+
+add_core = CPI
+owner = CPI
+controller = CPI
+culture = pirate
+religion = catholic
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = grain
+base_manpower = 3
+capital = "MemeLand"
+is_city = yes
+fort_15th = yes
+# add_province_triggered_modifier = test_modifier
+discovered_by = CPI
+
+add_permanent_province_modifier = {
+	name = pirate_base_test
+	duration = -1
+}
+

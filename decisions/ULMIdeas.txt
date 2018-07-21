@@ -1,0 +1,48 @@
+country_decisions = {
+
+
+	off_ideas_ulm = {
+		major = yes
+	potential = {
+	tag = ULM
+	has_country_modifier = eco_ulm
+	}
+	allow = {
+		mil_power = 100
+	
+	}
+	effect = {
+	remove_country_modifier = eco_ulm
+	swap_free_idea_group = yes
+	}
+	
+	}
+
+	eco_ideas_ulm = {
+		major = yes
+	potential = {
+	tag = ULM
+	NOT = {
+		has_country_modifier = eco_ulm
+		}
+	}
+	allow = {
+		dip_power = 100
+	}
+	effect = {
+	
+	add_country_modifier = { 
+    name = eco_ulm
+    duration = -1  
+    desc = eco_ulm
+    hidden = yes
+}
+	swap_free_idea_group = yes
+	
+	}
+	}
+
+
+
+
+}

@@ -1,0 +1,70 @@
+namespace = flavor_boh
+
+
+#CZECHS HAV SUM WATER
+country_event = {
+	id = flavor_boh.12
+	title = flavor_boh.12.t
+	desc = flavor_boh.12.d
+
+	picture = PEPE_FROG
+	
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = BOH
+		is_subject = no
+		num_of_total_ports = 1
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+		
+		modifier = {
+		factor = 0.01
+		NOT = { stability = 1 }
+	}
+	modifier = {
+		factor = 0.001
+		NOT = { stability = 2 }
+	}
+	modifier = {
+		factor = 0.0001
+		NOT = { stability = 3 }
+	}
+		
+	}
+	
+	option = {
+		name = flavor_boh.12.a #tak
+		ai_chance = { 
+			factor = 75 
+		}
+		define_ruler = {
+		name = "PEPE Pan"
+		dynasty = "Dziobak"
+			DIP = 10
+			ADM = 10
+			MIL = 10
+			claim = 100
+			culture = czech
+		}
+		add_country_modifier = { 
+		name = challenge_boh
+		duration = 30000
+		desc = challenge_boh
+		hidden = no
+		}
+		add_ruler_personality = immortal_personality
+	}
+	
+	option = {
+		name = flavor_boh.12.b #nie
+		ai_chance = { 
+			factor = 25
+		}
+		add_prestige = 50
+		
+	}
+	}

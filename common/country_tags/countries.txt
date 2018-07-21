@@ -1,0 +1,4 @@
+CPI = "countries/CarPirates.txt"
+LEH = "countries/LechinaEmpire.txt"
+PEP = "countries/PEP - PEP.txt"
+VIK = "countries/Nords.txt"

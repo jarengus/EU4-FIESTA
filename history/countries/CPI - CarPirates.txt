@@ -1,0 +1,6 @@
+government = pirate_conclave 
+government_rank = 1
+primary_culture = pirate
+religion = catholic
+technology_group = muslim
+capital = 5001	

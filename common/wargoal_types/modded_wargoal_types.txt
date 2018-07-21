@@ -1,0 +1,17 @@
+war_goal_pirate_yarr = {
+        type = superiority
+        badboy_factor = 0.10
+		transfer_trade_cost_factor = 0.5
+        prestige_factor = 2
+        peace_cost_factor = 0.5
+       
+	   peace_options = {
+       po_humiliate = yes
+	   po_trade_power = yes
+	   po_steer_trade = yes
+	   po_gold = yes
+	   }
+	   
+	   
+        war_name = PIRATE_STUFF
+}

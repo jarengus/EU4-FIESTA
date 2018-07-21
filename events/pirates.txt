@@ -1,0 +1,55 @@
+namespace = pirates_happen
+
+province_event = {
+	id = pirate_happen.1
+	title = "pirates_happen.1"
+	desc = "pirates_happen.1"
+	picture = PEPE_FROG
+	
+	trigger = {
+				
+				
+				region = carribeans_region
+				
+				
+				owner {
+				NOT { tag = CPI}
+				}
+			
+			}
+	
+	mean_time_to_happen = {
+		months = 1
+		modifier = {
+		factor = 0.01
+		NOT = { stability = 1 }
+	}
+	modifier = {
+		factor = 0.001
+		NOT = { stability = 2 }
+	}
+	modifier = {
+		factor = 0.0001
+		NOT = { stability = 3 }
+	}		
+	}
+
+	option = {	
+		name = "canal_events.EVTOPTA1"
+		ai_chance = { factor = 25 }
+		
+		cede_province = CPI
+		add_core = CPI
+		
+		}
+		
+		
+		owner {
+		add_prestige = -50
+		}
+	}
+
+	
+	
+}
+

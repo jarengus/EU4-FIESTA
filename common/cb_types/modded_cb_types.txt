@@ -1,0 +1,15 @@
+cb_pirate_yarr = {
+	valid_for_subject = no
+
+	
+	prerequisites = {
+       tag = CPI
+       is_subject = no
+	   NOT = {
+			truce_with = FROM
+			}
+	}
+	
+
+	war_goal = war_goal_pirate_yarr
+}
