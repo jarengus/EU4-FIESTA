@@ -1,14 +1,13 @@
 ﻿
 l_english: 
-    flavor_boh.12.t:0 "PO TYLU LATACH WALKI I TRUDÓW PRZEBILISMY SIE NA DRUGA STRONE TEGO PIEPRZONEGO MURU"
-    flavor_boh.12.d:0 "Udalo nam sie wreszcie dotrzec tam, gdzie zadnemu czechowi nigdy sie nie udalo. Dzieki temu mozemy wzniesc sie na nastepny krok cywilizacyjny, jednakze moze to zaniepokoic naszych sasiadow."
-    flavor_boh.12.a:0 "Podejmiemy to wyzwanie."
-    flavor_boh.12.b:0 "Nie powinnismy kusic losu."
-    flavor_boh.12.x:0 " PLACEHOLDER"
+    flavor_boh.12.t:0 "Sea on the horizon"
+    flavor_boh.12.d:0 "After many years we went to place where no Czech been before we can try to go even further but it'll have consequences."
+    flavor_boh.12.a:0 "We shall take the challenge."
+    flavor_boh.12.b:0 "It's tempting but too risky."
     challenge_boh:0 "WE HAVE TAKEN THE CHALLENGE"
-    kill_horde_title:0 "Paszou won z hordami"
-    kill_horde_desc:0 "Hordy irytuja naszych mieszkanców, nakop im kurde."
-    PROV5001:0 "MemeLand"
+    kill_horde_title:0 "Retaking horde lands"
+    kill_horde_desc:0 "We should subdue our horde neighbours to keep peace in our lands."
+    PROV5001:0 "Cove"
     pirate:0 "Pirate"
     nordth:0 "Nordth"
     
