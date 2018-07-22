@@ -1,4 +1,4 @@
-#Uppland, contains Stockholm, Uppsala & Nyköping.
+#Uppland, contains Stockholm, Uppsala & NykÃ¶ping.
 
 add_core = CPI
 owner = CPI
@@ -10,7 +10,7 @@ base_tax = 7
 base_production = 6
 trade_goods = grain
 base_manpower = 7
-capital = "MemeLand"
+capital = "Cove"
 is_city = yes
 fort_15th = yes
 # add_province_triggered_modifier = test_modifier
