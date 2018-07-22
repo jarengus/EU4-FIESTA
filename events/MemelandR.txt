@@ -1,0 +1,40 @@
+ namespace = memeland_r
+	province_event = {
+       id = memeland_r.1
+       title = memeland_r.1a
+       desc = memeland_r.1b
+       picture = _dane zdjecia z gfx_ #można użyć z trigger
+       fire_only_once = yes
+	   
+       trigger = {	#Warunki aby licznik eventu się  odpalił
+	   
+			province_id = 5001
+	   
+	   
+			Owner = {
+				TAG = CPI
+			}
+			
+			
+			any_country = {
+				TAG = mor 
+					has_institution = renaissance
+			}		
+        }
+       mean_time_to_happen = {
+       months = 1 #czas co ile odpala sie szansa na event, ten czas to 50% szansy, jest na to pojebion wzór, 
+   lepiej nie wiedzieć
+		}
+        modifier = { #ustawianie mnoznika czasu 
+        factor = 0.01 # mnożnik czasu 
+        NOT = { stability = 1 } # przykładowy warunek
+        }
+	option = { #opcje odpowiedzi na event, może być kilka
+		name = memeland_r.1c
+			add_institution_embracement = {
+				which = renaissance
+					value = 100
+}
+ #rzeczy które robi event
+  }
+ }
