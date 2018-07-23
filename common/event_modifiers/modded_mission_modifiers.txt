@@ -2,3 +2,21 @@
 	land_morale = 0.1
 	
 }
+
+trained_horses = {
+
+cavalry_flanking = 0.15
+}
+
+new_opportunity = {
+colonists = 1
+range = 0.1
+
+}
+
+fast_expansionism = {
+global_colonial_growth = 10
+core_creation = -0.03
+
+
+}
