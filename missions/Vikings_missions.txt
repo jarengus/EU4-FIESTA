@@ -1,0 +1,109 @@
+vik_explore = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = VIK
+	}
+	
+	
+	expand_fleet = {
+	icon = SCREECH
+	position = 6
+	required_missions = {  }
+	ai_weight = {
+			factor = 25
+		}
+		ai_priority = {
+			factor = 25
+		}
+	trigger {
+	
+	num_of_galley = 10
+	num_of_light_ship = 3
+	}		
+	effect = {
+		create_explorer = 50
+	}
+	}
+	
+	
+	explore_america = {
+	icon = SCREECH
+	position = 7
+	required_missions = { expand_fleet  }
+	ai_weight = {
+			factor = 25
+		}
+		ai_priority = {
+			factor = 25
+		}
+	trigger {
+	has_discovered = 962
+ 
+	}		
+	effect = {
+		create_conquistador = 50
+	}
+	}
+	
+	explore_more_america = {
+	icon = SCREECH
+	position = 8
+	required_missions = { explore_america  }
+	ai_weight = {
+			factor = 25
+		}
+		ai_priority = {
+			factor = 25
+		}
+	trigger {
+	illinois_country_area = {
+    has_discovered = ROOT
+}
+ 
+	}		
+	effect = {
+	
+		add_country_modifier = { 
+    name = new_opportunity
+    duration = -1  
+    desc = new_opportunity
+    hidden = no
+	}
+	}
+	}
+	
+	
+	
+	colonize_america = {
+	icon = SCREECH
+	position =  9
+	required_missions = { explore_more_america  }
+	ai_weight = {
+			factor = 25
+		}
+		ai_priority = {
+			factor = 25
+		}
+	trigger {
+	any_owned_province = {
+	limit = { has_port = yes }
+	region = northeast
+	}
+	effect = {
+		add_country_modifier = { 
+    name = fast_expansionism
+    duration = -1  
+    desc = fast_expansionism
+    hidden = no
+	}
+	}
+    }
+	}		
+	
+	
+	
+	
+	
+}

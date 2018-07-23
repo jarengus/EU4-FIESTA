@@ -143,10 +143,15 @@ lech_adv = {
 			factor = 25
 		}
 		trigger = {
-			num_of_cavalry = 20
+			num_of_cavalry = 45
 		}
 	effect = {
-		remove_country_modifier =   united_east_europe
+		add_country_modifier = { 
+		name = trained_horses
+		duration = -1
+		desc = trained_horses
+		hidden = no
+		}
 		
 	
 	
@@ -171,7 +176,7 @@ lech_pol = {
 	pursue_hre = {
 	icon = SCREECH
 	position = 8
-	required_missions = {  }
+	required_missions = { kill_ural }
 	ai_weight = {
 			factor = 25
 		}
@@ -179,13 +184,14 @@ lech_pol = {
 			factor = 25
 		}
 	trigger {
-	army_strength = {
-	who = emperor
-	value = 2.66
-}
-}
-
-		
+	
+    emperor = {
+        army_strength = {
+            who = ROOT
+            value = 3
+        }
+    }
+}		
 	effect = {
 		dismantle_hre = yes
 
@@ -194,4 +200,75 @@ lech_pol = {
 }
 	
 
+
 	
+	lech_build_up = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = LEH
+	}
+	
+	
+	lech_income = {
+	icon = SCREECH
+	position = 6
+	required_missions = {  }
+	ai_weight = {
+			factor = 25
+		}
+		ai_priority = {
+			factor = 25
+		}
+	trigger {
+	monthly_income = 50
+	
+	
+}
+
+		
+	effect = {
+		capital_scope = {
+    add_base_tax = 3
+	add_base_production = 3
+	add_base_manpower = 3
+	add_prosperity = 100
+	}
+
+	}
+	}
+	
+		lech_develop = {
+	icon = SCREECH
+	position = 8
+	required_missions = { lech_income }
+	ai_weight = {
+			factor = 25
+		}
+		ai_priority = {
+			factor = 25
+		}
+	trigger {
+	total_development = 1000
+	any_province ={
+	is_capital = yes
+	has_owner_accepted_culture = yes
+	}
+	
+	
+}
+
+		
+	effect = {
+		capital_scope = {
+		add_province_modifier ={
+		name = great_country_capital 
+		duration = -1 }
+	}
+    
+	}
+
+	}
+	}
+}
