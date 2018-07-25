@@ -3,7 +3,7 @@
        id = kraken_r.1
        title = kraken_r.1a
        desc = kraken_r.1b
-       picture = _dane zdjecia z gfx_ #można użyć z trigger
+       picture = PEPE_FROG #można użyć z trigger
        fire_only_once = no
 	   
        trigger = { 
@@ -21,7 +21,12 @@
 	}	
  option = { #opcje odpowiedzi na event, może być kilka
  name = kraken_r.1c
-		naval_morale = -0.1
+		add_country_modifier = { 
+		name = bad_sailor_morale
+		duration = 720
+		desc = bad_sailor_morale
+		hidden = no
+		}
 		add_sailors = -2000
  #rzeczy które robi event
  }
