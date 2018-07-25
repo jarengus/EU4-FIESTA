@@ -6,3 +6,8 @@
 	colonists = 1
 	global_trade_goods_size_modifier = -0.25
 }
+
+
+bad_sailor_morale = {
+	naval_morale = -0.1
+}
