@@ -37,7 +37,7 @@ LEH_ideas = {
 	}
 }
 
-ULM_OFF_ideas = {
+ULM_MIL_ideas = {
 	start = {
 		land_morale = 0.1
 		defensiveness = 0.25
@@ -49,6 +49,7 @@ ULM_OFF_ideas = {
 	
 	trigger = {
 		tag = ULM
+		has_country_modifier = mil_ulm
 		NOT = {
 		has_country_modifier = eco_ulm
 		}
@@ -92,6 +93,9 @@ ULM_eco_ideas = {
 		tag = ULM
 		
 		has_country_modifier = eco_ulm
+		NOT = {
+		has_country_modifier = mil_ulm
+		}
 		
 	}
 	free = yes		#will be added at load.
