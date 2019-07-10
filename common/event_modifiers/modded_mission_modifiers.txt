@@ -15,7 +15,7 @@ range = 0.1
 }
 
 fast_expansionism = {
-global_colonial_growth = 10
+global_colonial_growth = 5
 core_creation = -0.02
 
 
