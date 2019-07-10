@@ -1,7 +1,7 @@
 country_decisions = {
 
 
-	off_ideas_ulm = {
+	mil_ideas_ulm = {
 		major = yes
 	potential = {
 	tag = ULM
@@ -13,6 +13,13 @@ country_decisions = {
 	}
 	effect = {
 	remove_country_modifier = eco_ulm
+	
+	add_country_modifier = { 
+    name = mil_ulm
+    duration = -1  
+    desc = mil_ulm
+    hidden = yes
+}
 	swap_free_idea_group = yes
 	}
 	
@@ -30,6 +37,7 @@ country_decisions = {
 		dip_power = 100
 	}
 	effect = {
+	remove_country_modifier = mil_ulm
 	
 	add_country_modifier = { 
     name = eco_ulm
